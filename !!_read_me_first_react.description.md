@@ -23,3 +23,6 @@ or
 For block03 > ex02 inside block03 folder:
 
     create-react-app ex02
+
+
+git rm -r --cached ex01
