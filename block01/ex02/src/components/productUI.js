@@ -7,8 +7,7 @@ export default function productUI(value) {
         <div className='productinfo'>
             <p>{value.product}</p>
             <p id="price">${value.price}</p>
-        </div>
-        
+         </div>
     </div>
   )
 }

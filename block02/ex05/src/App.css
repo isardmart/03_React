@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Norican&family=Oswald:wght@300;400&display=swap');
+
+.App {
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.shop-headers {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  margin: 0;
+}
+header,footer {
+  padding:20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-family: Norican,cursive;
+  font-size: 2em;
+  font-weight: 700;
+}
+header ul li{
+  display: inline-flex;
+  padding-inline: 20px;
+  font-weight: 400;
+}
+footer ul li{
+  display: inline-flex;
+  justify-content: space-between;
+  padding-inline: 30px;
+  font-weight: 400;
+}
+.product-block{
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: -webkit-transform .25s ease-out;
+  transition: transform .25s ease-out;
+  transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+}
+.product-block:hover {
+  transform: scale(1.05);
+}
+.product-block >img{
+  display: block;
+  height: auto;
+  margin: 2em auto 1em;
+  max-height: 200px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.products{
+  grid-gap: 2em;
+  align-items: stretch;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  justify-content: space-between;
+  margin-bottom: 4em;
+  margin-top: 1em;
+  width: 100%;
+}
+.productinfo{
+  margin: 0.7em;
+  font-size: 1.5em;
+}
+#price{
+  color:rgb(4, 255, 4);
+  position: relative;
+  left: 80%;
+}
