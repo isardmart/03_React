@@ -16,10 +16,10 @@ export default function TodoForm({addTodo}) {
         }
     }
   return (
-    <div className='form'>
-        <form onSubmit={handleSubmit}>
-            <input type='text' value={textInput} onChange={handleChange}/>
-            <button>Add todo</button>
+    <div >
+        <form className='form' onSubmit={handleSubmit}>
+            <input className='input' type='text' value={textInput} onChange={handleChange}/>
+            <button className='add'>+</button>
         </form>
     </div>
   )

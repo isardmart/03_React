@@ -20,8 +20,8 @@ export default function Todo({todo,todoDone,deleteItem}) {
     let close = ()=>{return hovered? 'closenow':'close' }
 
   return (
-    <div class="todo" onMouseOver={deleteAppear} onMouseOut={deleteDisappear} id="todo" style={cross()}>
-        <input type="checkbox" checked={todo.done} 
+    <div className="todo" onMouseOver={deleteAppear} onMouseOut={deleteDisappear} style={cross()}>
+        <input className='check' type="checkbox" checked={todo.done} 
         onChange={()=>todoDone(todo.id)}/>
         {todo.content}
         <button class={close()} onClick={()=>deleteItem(todo.id)}/>

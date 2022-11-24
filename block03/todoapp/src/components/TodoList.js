@@ -2,7 +2,7 @@ import React from 'react'
 import Todo from './Todo'
 export default function TodoList({todos,todoDone, deleteItem}) {
   return (
-    <div>
+    <div className='list'>
         {
             todos.map((todo,indx)=>(
                 <Todo key={`todo${indx}`} todo={todo} todoDone={todoDone} 

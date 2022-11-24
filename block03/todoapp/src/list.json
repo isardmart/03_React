@@ -1,7 +1,7 @@
 [{
     "id":1,
     "content":"potato",
-    "done":true
+    "done":false
 },
 {
     "id":2,
