@@ -1,8 +1,10 @@
 import React from 'react'
-import storeUser from './App'
 
-export default function Password() {
-  return (
-    <div><input onChange={storeUser}/></div>
-  )
+export default function User(props) {
+    const storeUser = (e) => {
+    props.userSetter(e.target.value)
+    }
+      return (
+        <div><input onChange={storeUser}/></div>
+      )
 }

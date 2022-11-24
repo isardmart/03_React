@@ -10,9 +10,7 @@ function App() {
   let productBest = (arr) =>
     arr.map((value) => {
       return value.bestSeller ? (
-        <p>
           <SingleProduct product={value} />
-        </p>
       ) : null;
     });
 

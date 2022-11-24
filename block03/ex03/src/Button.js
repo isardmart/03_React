@@ -1,8 +1,13 @@
 import React from 'react'
-import storeButton from './App.js'
 
-export default function Button() {
+export default function Button(props) {
+    let user=props.userState;
+    let password=props.passwordState;
+
+    const Alert=()=>{
+        if (user !==''& password!==''){alert(`user:${user} and password ${password[0]}**** is stored`)}
+      }
   return (
-    <div><button onClick={storeButton}/></div>
+    <div><button onClick={Alert}></button></div>
   )
 }
