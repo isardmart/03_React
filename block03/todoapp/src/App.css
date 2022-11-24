@@ -40,6 +40,9 @@ header{
   display: flex;
   justify-content: space-around;
 }
+.todo:hover{
+  transform: scale(1.05);
+}
 .form{
   margin: 20px;
   border: 1px #32746A;
