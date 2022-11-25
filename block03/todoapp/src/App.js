@@ -19,6 +19,7 @@ function App() {
 
   const addTodo =(newTodo)=>{
     let maxId= Math.max(...todos.map(o => o.id));
+    if (maxId===-Infinity){maxId=0}
     console.log(maxId)
     let newItem={id:maxId+1,content:newTodo,done:false};
     setTodos([...todos,newItem])
