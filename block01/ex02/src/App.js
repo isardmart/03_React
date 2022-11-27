@@ -8,8 +8,7 @@ import header from './components/header';
 import productUI from './components/productUI'
 
 function App() {
-  
-  
+
   let productDisplay = (arr) =>
     arr.map((value) => {
       return <p>{productUI(value)}</p>

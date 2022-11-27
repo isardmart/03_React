@@ -1,0 +1,32 @@
+
+header{
+  display:inline-flex;
+  justify-content: space-between;
+  width: calc(100vw - 60px);
+  padding: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+  margin: 0px;
+}
+.products{
+  display: contents;
+  width: calc(100vw - 60px);
+  padding: 30px;
+
+}
+.product{
+  display: inline-flex;
+  justify-content: space-between;
+  width: calc(100vw - 60px);
+  padding: 30px;
+}
+.product>img{
+  width:100px;
+  height: 100px;
+}
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
