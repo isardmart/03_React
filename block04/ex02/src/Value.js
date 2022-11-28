@@ -1,10 +1,11 @@
-import React from 'react'
+// Value.js:
 
-export default function Value({eur}) {
-    const usdConversion=()=>{
-        return(eur*1.17)
-    }
-  return (
-    <h1>{usdConversion()}</h1>
-  )
+export default function Value({conversion, eur}) {
+  const usdConversion=()=>{
+      return(eur * conversion)
+  }
+return (
+  <h1>{usdConversion()}</h1>
+)
 }
+

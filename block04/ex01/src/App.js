@@ -8,9 +8,14 @@ function App() {
     setCounter(counter+1)
   }
 
-  const isOdd=()=>{
-    if((counter%2)!==0){return(counter)}
-  }
+  const isOdd = () => {
+    if (counter % 2 !== 0) {
+      return counter;
+    } else if (counter !== 0) {
+      return counter - 1;
+    }
+    return counter;
+  };
   return (
     <div className="App">
       <h2>{isOdd()}</h2>
